@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- <link rel="stylesheet" href="https://bootstrapmade.com/assets/css/demo.css?v=5.2"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+
+    <style>
+        .checkbox-wrapper-19 {
+            box-sizing: border-box;
+            --background-color: #fff;
+            --checkbox-height: 25px;
+            display: flex;
+        }
+
+        @-moz-keyframes dothabottomcheck-19 {
+            0% {
+                height: 0;
+            }
+
+            100% {
+                height: calc(var(--checkbox-height) / 2);
+            }
+        }
+
+        @-webkit-keyframes dothabottomcheck-19 {
+            0% {
+                height: 0;
+            }
+
+            100% {
+                height: calc(var(--checkbox-height) / 2);
+            }
+        }
+
+        @keyframes dothabottomcheck-19 {
+            0% {
+                height: 0;
+            }
+
+            100% {
+                height: calc(var(--checkbox-height) / 2);
+            }
+        }
+
+        @keyframes dothatopcheck-19 {
+            0% {
+                height: 0;
+            }
+
+            50% {
+                height: 0;
+            }
+
+            100% {
+                height: calc(var(--checkbox-height) * 1.2);
+            }
+        }
+
+        @-webkit-keyframes dothatopcheck-19 {
+            0% {
+                height: 0;
+            }
+
+            50% {
+                height: 0;
+            }
+
+            100% {
+                height: calc(var(--checkbox-height) * 1.2);
+            }
+        }
+
+        @-moz-keyframes dothatopcheck-19 {
+            0% {
+                height: 0;
+            }
+
+            50% {
+                height: 0;
+            }
+
+            100% {
+                height: calc(var(--checkbox-height) * 1.2);
+            }
+        }
+
+        .checkbox-wrapper-19 input[type=checkbox] {
+            display: none;
+        }
+
+        .checkbox-wrapper-19 .check-box {
+            height: var(--checkbox-height);
+            width: var(--checkbox-height);
+            background-color: transparent;
+            border: calc(var(--checkbox-height) * .1) solid #000;
+            border-radius: 5px;
+            position: relative;
+            display: inline-block;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            -moz-transition: border-color ease 0.2s;
+            -o-transition: border-color ease 0.2s;
+            -webkit-transition: border-color ease 0.2s;
+            transition: border-color ease 0.2s;
+            cursor: pointer;
+        }
+
+        .checkbox-wrapper-19 .check-box::before,
+        .checkbox-wrapper-19 .check-box::after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            position: absolute;
+            height: 0;
+            width: calc(var(--checkbox-height) * .2);
+            background-color: #8A0000;
+            display: inline-block;
+            -moz-transform-origin: left top;
+            -ms-transform-origin: left top;
+            -o-transform-origin: left top;
+            -webkit-transform-origin: left top;
+            transform-origin: left top;
+            border-radius: 5px;
+            content: " ";
+            -webkit-transition: opacity ease 0.5;
+            -moz-transition: opacity ease 0.5;
+            transition: opacity ease 0.5;
+        }
+
+        .checkbox-wrapper-19 .check-box::before {
+            top: calc(var(--checkbox-height) * .72);
+            left: calc(var(--checkbox-height) * .41);
+            box-shadow: 0 0 0 calc(var(--checkbox-height) * .05) var(--background-color);
+            -moz-transform: rotate(-135deg);
+            -ms-transform: rotate(-135deg);
+            -o-transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+        }
+
+        .checkbox-wrapper-19 .check-box::after {
+            top: calc(var(--checkbox-height) * .37);
+            left: calc(var(--checkbox-height) * .05);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+
+        .checkbox-wrapper-19 input[type=checkbox]:checked+.check-box,
+        .checkbox-wrapper-19 .check-box.checked {
+            border-color: #8A0000;
+        }
+
+        .checkbox-wrapper-19 input[type=checkbox]:checked+.check-box::after,
+        .checkbox-wrapper-19 .check-box.checked::after {
+            height: calc(var(--checkbox-height) / 2);
+            -moz-animation: dothabottomcheck-19 0.2s ease 0s forwards;
+            -o-animation: dothabottomcheck-19 0.2s ease 0s forwards;
+            -webkit-animation: dothabottomcheck-19 0.2s ease 0s forwards;
+            animation: dothabottomcheck-19 0.2s ease 0s forwards;
+        }
+
+        .checkbox-wrapper-19 input[type=checkbox]:checked+.check-box::before,
+        .checkbox-wrapper-19 .check-box.checked::before {
+            height: calc(var(--checkbox-height) * 1.2);
+            -moz-animation: dothatopcheck-19 0.4s ease 0s forwards;
+            -o-animation: dothatopcheck-19 0.4s ease 0s forwards;
+            -webkit-animation: dothatopcheck-19 0.4s ease 0s forwards;
+            animation: dothatopcheck-19 0.4s ease 0s forwards;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER MENU START -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./images/logo.png" alt="">
+                <a href="#"><strong>Ravindera Road Carriers</strong></a>
+            </div>
+            <ul>
+                <li><a href="#hero__section" class="links-color">Home</a></li>
+                <li><a href="#services__section" class="links-color">Services</a></li>
+                <li><a href="#aboutus__section" class="links-color">About</a></li>
+                <li><a href="#contact__section" class="links-color">Contact Us</a></li>
+                <li class="login__btn"><a href="#">Login</a></li>
+                <div id="close-btn" class="close-btn"><i class="fa-solid fa-xmark"></i></div>
+            </ul>
+
+            <div id="menu-btn" class="menu-btn"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+    </header>
+    <!-- HEADER MENU ENDS -->
+
+    <!-- HERO SECTION START -->
+    <section id="hero__section">
+        <div class="hero__container">
+            <div class="left__hero">
+                <h1>We offer modern solutions for your growing logistics needs</h1>
+                <p>We are team of focused result driven people ensuring your logistics needs come to life</p>
+                <form action="/">
+                    <div>
+                        <input type="text" required placeholder="Enter Your Tracking Number">
+                        <button type="submit">Track</button>
+                    </div>
+                </form>
+            </div>
+            <div class="right__hero">
+                <img src="./images/hero-img.png" alt="">
+            </div>
+        </div>
+        <a href="#services__section" type="button" id="scroll__btn">
+            <span></span>
+        </a>
+    </section>
+    <!-- HERO SECTION ENDS -->
+
+    <!-- HERO SECTION DROP-DOWN FORM START -->
+    <div class="accordian">
+        <div class="question">
+            <div>
+                <img src="./images/card-icon-1.svg" alt="">
+                <h3>Cost of delivery</h3>
+                <p>This service will help you find out the estimated cost of your shipment delivery.</p>
+            </div>
+            <i class="fa-solid fa-chevron-down icon"></i>
+        </div>
+        <div class="answer">
+            <form class="answer__container">
+                <div class="form__cont">
+                    <div class="left__answer">
+                        <div class="same-width">
+                            <p class="side-head">Route:</p>
+                            <div class="same-input">
+                                <div class="center">
+                                    <div class="wrapper-dropdown" id="dropdown1">
+                                        <span class="selected-display" id="destination">From:</span>
+                                        <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="transition-all ml-auto rotate-180">
+                                            <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                        <ul class="dropdown">
+                                            <li class="item">Option 1</li>
+                                            <li class="item">Option 2</li>
+                                            <li class="item">Option 3</li>
+                                            <li class="item">Option 4</li>
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="wrapper-dropdown" id="dropdown2">
+                                        <span class="selected-display" id="destination">To:</span>
+                                        <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="transition-all ml-auto rotate-180">
+                                            <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                        <ul class="dropdown">
+                                            <li class="item">Special Option 1</li>
+                                            <li class="item">Special Option 2</li>
+                                            <li class="item">Special Option 3</li>
+                                            <li class="item">Special Option 4</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="same-width">
+                            <p class="side-head">Type of shipping:</p>
+                            <div class="same-input">
+                                <div class="center">
+                                    <div class="wrapper-dropdown" id="dropdown">
+                                        <span class="selected-display" id="destination">Branch-Branch</span>
+                                        <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="transition-all ml-auto rotate-180">
+                                            <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                        <ul class="dropdown">
+                                            <li class="item">Option 1</li>
+                                            <li class="item">Option 2</li>
+                                            <li class="item">Option 3</li>
+                                            <li class="item">Option 4</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="same-width">
+                            <p class="side-head">Type of delivery:</p>
+                            <div class="same-input">
+                                <div class="center">
+                                    <div class="wrapper-dropdown" id="dropdown3">
+                                        <span class="selected-display" id="destination">Same day delivery</span>
+                                        <svg class="arrow" id="drp-arrow" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="transition-all ml-auto rotate-180">
+                                            <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                        <ul class="dropdown">
+                                            <li class="item">Door delivery</li>
+                                            <li class="item">Godown delivery</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="same-width">
+                            <p class="side-head">Services:</p>
+                            <div class="same-input flex-input">
+                                <!-- <input type="checkbox" name="checkbox" id="checkbox"> -->
+
+                                <div class="checkbox-wrapper-19">
+                                    <input type="checkbox" checked id="cbtest-19" />
+                                    <label for="cbtest-19" class="check-box">
+                                </div>
+                                <label for="cbtest-19">Return Delivery</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right__answer">
+                        <div class="same-width">
+                            <p class="side-head">Weight:</p>
+                            <div class="same-input">
+                                <input type="text" placeholder="0.00" id="weight" />
+                                <span>kg</span>
+                            </div>
+                        </div>
+
+                        <div class="same-width">
+                            <p class="side-head">Volume:</p>
+                            <div class="same-input flex-input">
+                                <input type="text" placeholder="Length" id="Length" />
+                                <input type="text" placeholder="Width" id="Width" />
+                                <input type="text" placeholder="Height" id="Height" />
+                                <span>cm</span>
+                            </div>
+                        </div>
+
+                        <div class="same-width">
+                            <p class="side-head">Declared value:</p>
+                            <div class="same-input">
+                                <input type="text" placeholder="0.00" id="declared" />
+                                <span>INR</span>
+                            </div>
+                        </div>
+
+                        <div class="same-width">
+                            <p class="side-head">Services:</p>
+                            <div class="same-input flex-input">
+                                <div class="checkbox-wrapper-19">
+                                    <input type="checkbox" id="cbtest-20" />
+                                    <label for="cbtest-20" class="check-box">
+                                </div>
+                                <label for="cbtest-20">Packaging</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formt-btns-drop-down">
+                    <button type="submit" id="submit-btn">Calculate the cost</button>
+                    <button type="reset" id="resetButton">Clear</button>
+                </div>
+
+                <div class="sheping__container">
+                    <div class="sheping__box">
+                        <h2>Estimated shipping cost</h2>
+                        <p>The final cost of transportation may differ from the calculated.</p>
+                    </div>
+                    <div class="sheping__box">
+                        <p class="sm-md">Services:</p>
+                        <ul>
+                            <li>Delivery cost</li>
+                            <li>Return Delivery</li>
+                            <li>Packaging</li>
+                        </ul>
+                    </div>
+                    <div class="sheping__box">
+                        <p class="sm-md">Price:</p>
+                        <ul>
+                            <li>INR 3500</li>
+                            <li>INR 1000</li>
+                            <li>INR 3500</li>
+                        </ul>
+                    </div>
+                    <div class="sheping__box">
+                        <p class="sm-md">Total:</p>
+                        <ul>
+                            <li class="total-mn">INR 8000</li>
+                            <li>TAX included</li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- HERO SECTION DROP-DOWN FORM ENDS -->
+
+    <!-- SERVICES SECTION START -->
+    <section id="services__section">
+        <p>SERVICES</p>
+        <h2>Veritatis et dolores facere numquam et praesentium</h2>
+        <div class="service__container blue-container">
+            <div class="padd__services blue-services">
+                <div class="services__box blue-box">
+                    <i class="fa-regular fa-message white-bg blue-icon"></i>
+                    <h3>Nesciunt Mete</h3>
+                    <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure
+                        perferendis tempore et consequatur.</p>
+                    <a href="#" class="read-more blue-read"><span>Read More</span><i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="padd__services orange-services">
+                <div class="services__box orange-box">
+                    <i class="fa-regular fa-message white-bg orange-icon"></i>
+                    <h3>Nesciunt Mete</h3>
+                    <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure
+                        perferendis tempore et consequatur.</p>
+                    <a href="#" class="read-more orange-read"><span>Read More</span><i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="padd__services green-services">
+                <div class="services__box green-box">
+                    <i class="fa-regular fa-message white-bg green-icon"></i>
+                    <h3>Nesciunt Mete</h3>
+                    <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure
+                        perferendis tempore et consequatur.</p>
+                    <a href="#" class="read-more green-read"><span>Read More</span><i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="padd__services red-services">
+                <div class="services__box red-box">
+                    <i class="fa-regular fa-message white-bg red-icon"></i>
+                    <h3>Nesciunt Mete</h3>
+                    <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure
+                        perferendis tempore et consequatur.</p>
+                    <a href="#" class="read-more red-read"><span>Read More</span><i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="padd__services boilet-services">
+                <div class="services__box boilet-box">
+                    <i class="fa-regular fa-message white-bg boilet-icon"></i>
+                    <h3>Nesciunt Mete</h3>
+                    <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure
+                        perferendis tempore et consequatur.</p>
+                    <a href="#" class="read-more boilet-read"><span>Read More</span><i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="padd__services pink-services">
+                <div class="services__box pink-box">
+                    <i class="fa-regular fa-message white-bg pink-icon"></i>
+                    <h3>Nesciunt Mete</h3>
+                    <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure
+                        perferendis tempore et consequatur.</p>
+                    <a href="#" class="read-more pink-read"><span>Read More</span><i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SERVICES SECTION ENDS -->
+
+    <!-- ABOUT US SECTION START -->
+    <section id="aboutus__section">
+        <p>About</p>
+        <h2>About Us</h2>
+        <div class="abiut__cont">
+            <div class="left__about">
+                <h4>WHO WE ARE</h4>
+                <h3>Expedita voluptas omnis cupiditate totam eveniet nobis sint iste. Dolores est repellat corrupti reprehenderit.</h3>
+                <p>Quisquam vel ut sint cum eos hic dolores aperiam. Sed deserunt et. Inventore et et dolor consequatur itaque ut voluptate sed et. Magnam nam ipsum tenetur suscipit voluptatum nam et est corrupti.</p>
+                <div>
+                    <a href="#" id="read-more-btn"><span>Read More</span><i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+            <div class="right__about">
+                <img src="./images/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT US SECTION ENDS -->
+
+    <!-- CONTACT SECTION START -->
+    <section id="contact__section">
+        <p>CONTACT</p>
+        <h2>Contact Us</h2>
+        <div class="contact__cont">
+            <div class="left__contact">
+                <div class="contact__boxe">
+                    <img src="./images/location.svg" alt="">
+                    <h3>Address</h3>
+                    <p>A108 Adam Street,</p>
+                    <p>A108 Adam Street,</p>
+                </div>
+                <div class="contact__boxe">
+                    <img src="./images/call.svg" alt="">
+                    <h3>Call Us</h3>
+                    <p>+1 5589 55488 55</p>
+                    <p>+1 6678 254445 41</p>
+                </div>
+                <div class="contact__boxe">
+                    <img src="./images/mail.svg" alt="">
+                    <h3>Email Us</h3>
+                    <p>info@example.com</p>
+                    <p>contact@example.com</p>
+                </div>
+                <div class="contact__boxe">
+                    <img src="./images/timer.svg" alt="">
+                    <h3>Open Hours</h3>
+                    <p>Monday - Friday</p>
+                    <p>9:00AM - 05:00PM</p>
+                </div>
+            </div>
+            <div class="right__contact">
+                <form action="#">
+                    <div class="flex-input">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" placeholder="Your Email" required>
+                    </div>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea name="" id="message" placeholder="Message"></textarea>
+                    <div class="msg-btn">
+                        <button type="submit" id="send_msg">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="news__letter_cont">
+            <form action="#">
+                <h3>Our Newsletter</h3>
+                <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                <div>
+                    <input type="text" required>
+                    <button type="submit" id="subscribe__btn">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- CONTACT SECTION ENDS -->
+
+
+    <!-- FOOTER START -->
+    <footer>
+        <div class="footer__container">
+            <div class="footer__links">
+                <div class="footer__boxe">
+                    <div class="footer__logo">
+                        <img src="./images/logo.png" alt="logo">
+                        <a href="#"><strong>Ravindera Road Carriers</strong></a>
+                    </div>
+                    <p>At Ravindera Road Carriers, we pride ourselves in outstanding service to all our customers. Our
+                        company provides specialized freight and trucking service all throughout the INDIA.</p>
+                    <ul class="socal__links">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer__boxe">
+                    <h4>USEFUL LINKS</h4>
+                    <ul class="same__list">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Terms of service</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer__boxe">
+                    <h4>OUR SERVICES</h4>
+                    <ul class="same__list">
+                        <li><a href="#">Express Parcel</a></li>
+                        <li><a href="#">Full TruckLoad (FTL)</a></li>
+                        <li><a href="#">Part TruckLoad (LTL)</a></li>
+                        <li><a href="#">Warehousing</a></li>
+                    </ul>
+                </div>
+                <div class="footer__boxe">
+                    <h4>CONTACT US</h4>
+                    <ul class="same__list contact__details">
+                        <h3>Head office</h3>
+                        <li>36/17-18, Damodar Park<br>
+                            GT Road Shahdara Delhi-110095</li>
+                        <li><b>Phone:</b> +91 93112 94243</li>
+                        <li><b>Email:</b> rrctransport@live.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© 2023 Copyright: <a href="#">RRC.com</a></p>
+    </footer>
+    <!-- FOOTER ENDS -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var links = document.querySelectorAll('.links-color');
+            var sections = document.querySelectorAll('section');
+            var currentHash = window.location.hash.substring(1); // Get the hash value from the URL without '#'
+
+            // Function to check if a section's ID matches the current hash
+            function matchHashToSection() {
+                sections.forEach(function (section) {
+                    if (section.id === currentHash) {
+                        links.forEach(function (link) {
+                            if (link.getAttribute('href').substring(1) === currentHash) {
+                                link.style.color = '#a50606'; // Change color to red if ID matches
+                            }
+                        });
+                    }
+                });
+            }
+
+            // Call the function initially to set colors if the hash matches
+            matchHashToSection();
+
+            window.addEventListener('scroll', function () {
+                var fromTop = window.scrollY;
+
+                sections.forEach(function (section) {
+                    if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+                        links.forEach(function (link) {
+                            if (link.getAttribute('href').substring(1) === section.id) {
+                                link.style.color = '#a50606'; // Change color to red if ID matches
+                            } else {
+                                link.style.color = '#000'; // Revert back to default color
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
